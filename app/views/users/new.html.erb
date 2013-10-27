@@ -1,0 +1,14 @@
+New User 
+<%= form_for @user do |f| %>
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name, placeholder: "Enter your username here" %><br>
+
+  <%= f.label :email, "Email" %>
+  <%= f.email_field :email, placeholder: "Enter your email here" %><br>
+
+  <%= f.label :password_digest, "Password" %>
+  <%= f.password_field :password_digest, placeholder: "Enter your password here" %><br>
+
+  <%= f.submit %>
+<% end %>
+
